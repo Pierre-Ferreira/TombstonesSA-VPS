@@ -111,9 +111,15 @@ body{
 /*Extra small size screen*/
 @media screen and (max-width: 767px) {
   .navbar .container-fluid .navbar-brand {
-    font-size: small;
+    font-size: medium;
   }
   .homepage-jumbotron h1{
-    font-size: 20px;
+    font-size: 23px;
+  }
+  .contactus-form {
+    padding: 30px 15px 60px;
+  }
+  .page-paragraph {
+      font-size: 23px;
   }
 }
