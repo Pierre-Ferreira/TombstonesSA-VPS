@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block head_title %} {{title}} | {{block.super}} {% endblock head_title %}
+
+{% block content %}
+
+{{ block.super }}
+<div class="row contact-us-page">
+  <div class='col-sm-8 col-sm-offset-2'>
+    <h1 class='page-header'>{{title}}</h1>
+    <div class="row">
+      <div class='col-md-6 col-xs-12 contactus-form'>
+        <form method='POST' action=''> {% csrf_token %}
+          {{form|crispy}}
+          <input type='submit' class='btn btn-contactus-submit btn-lg btn-block' value='Submit' />
+        </form>
+      </div>
+      <div class='col-md-6 col-xs-12'>
+        {% include 'fill_form_encouragement_para.html' %}
+        <img src="../static/images/contactus/IMG_0302.jpg" alt="{{obj.desc}}" class="img-responsive">
+        <img src="../static/images/contactus/IMG_0318.jpg" alt="{{obj.desc}}" class="img-responsive">
+        <img src="../static/images/contactus/IMG_0368.jpg" alt="{{obj.desc}}" class="img-responsive">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

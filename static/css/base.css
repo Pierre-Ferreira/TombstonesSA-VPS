@@ -1,0 +1,119 @@
+body{
+  background-color: white;
+}
+.container {
+  background-color: #ebebeb;
+}
+.navbar .container-fluid {
+  /*border: black;
+  border-width: 5px;
+  border-style: solid;*/
+}
+.navbar .container-fluid .navbar-brand {
+  /*color: black;*/
+  font-size: x-large;
+}
+.navbar-default .navbar-nav  li  a {
+  /*color: black;*/
+  margin: 0 5px;
+  font-size: larger;
+}
+.page-header{
+  text-align: center;
+  margin: 20px 0 20px;
+}
+.page-paragraph {
+  font-size: larger;
+  text-align: justify;
+}
+.homepage .homepage-jumbotron {
+  background-color: white;
+  text-align: center;
+}
+.homepage img{
+  border: gray;
+  border-width: 4px;
+  border-style: groove;
+}
+.read-below-guide {
+  font-size: medium;
+}
+.catalogue-thumbnail p {
+  height: 60px
+}
+.feedback-form {
+  background-color: #d6d6d6;
+  border-width: 2px;
+  border-style: solid;
+  padding: 30px 50px;
+  margin-top: 30px;
+}
+.feedback-form .btn-feedback-submit {
+  background-color: #2d2d2d;
+  color: #9d9d9d;
+}
+.feedback-form .btn-feedback-submit:hover {
+  color: white;
+}
+.contact-us-page img {
+    border: gray;
+    border-width: 4px;
+    border-style: groove;
+    margin-bottom: 5px;
+}
+.contactus-form {
+  background-color: #d6d6d6;
+  border-width: 2px;
+  border-style: solid;
+  padding: 30px 50px 60px;
+  margin-top: 30px;
+}
+.contactus-form .btn-contactus-submit {
+  background-color: #2d2d2d;
+  color: #9d9d9d;
+}
+.contactus-form .btn-contactus-submit:hover {
+  color: white;
+}
+.control-label{
+  font-size: x-large;
+}
+.form-control {
+    height: 45px;
+    font-size: 25px;
+}
+.form-group {
+  text-align: center;
+}
+.Messages {
+  text-align: center;
+  font-size: x-large;
+  color: green;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+/*Medium size screen*/
+@media screen and (max-width: 992px) {
+  .navbar-default .navbar-nav > li > a {
+    margin: 0 -6px;
+  }
+  .homepage-jumbotron h1{
+    font-size: 45px;
+  }
+}
+
+/*Small size screen*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+/*Extra small size screen*/
+@media screen and (max-width: 767px) {
+  .navbar .container-fluid .navbar-brand {
+    font-size: large;
+  }
+  .homepage-jumbotron h1{
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,17 @@
+[2016-06-03 14:09:17 +0000] [6648] [INFO] Starting gunicorn 19.6.0
+[2016-06-03 14:09:17 +0000] [6648] [INFO] Listening at: unix:/home/pierref/myproject/tombstone_sa.sock (6648)
+[2016-06-03 14:09:17 +0000] [6648] [INFO] Using worker: sync
+[2016-06-03 14:09:17 +0000] [6654] [INFO] Booting worker with pid: 6654
+[2016-06-03 14:09:17 +0000] [6655] [INFO] Booting worker with pid: 6655
+[2016-06-03 14:09:17 +0000] [6656] [INFO] Booting worker with pid: 6656
+[2016-06-03 20:24:55 +0000] [6655] [INFO] Worker exiting (pid: 6655)
+[2016-06-03 20:24:55 +0000] [6654] [INFO] Worker exiting (pid: 6654)
+[2016-06-03 20:24:55 +0000] [6656] [INFO] Worker exiting (pid: 6656)
+[2016-06-03 14:24:55 +0000] [6648] [INFO] Handling signal: term
+[2016-06-03 14:24:55 +0000] [6648] [INFO] Shutting down: Master
+[2016-06-03 14:24:56 +0000] [6778] [INFO] Starting gunicorn 19.6.0
+[2016-06-03 14:24:56 +0000] [6778] [INFO] Listening at: unix:/home/pierref/myproject/tombstone_sa.sock (6778)
+[2016-06-03 14:24:56 +0000] [6778] [INFO] Using worker: sync
+[2016-06-03 14:24:56 +0000] [6784] [INFO] Booting worker with pid: 6784
+[2016-06-03 14:24:56 +0000] [6785] [INFO] Booting worker with pid: 6785
+[2016-06-03 14:24:56 +0000] [6788] [INFO] Booting worker with pid: 6788

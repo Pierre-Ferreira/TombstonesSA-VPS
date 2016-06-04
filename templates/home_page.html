@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block head_title %} {{title}} | {{block.super}} {% endblock head_title %}
+
+{% block content %}
+
+{{ block.super }}
+<div class="row homepage">
+  <div class='col-sm-10 col-sm-offset-1'>
+    <!-- <h1 class='page-header'>{{title}}</h1> -->
+    <div class="jumbotron homepage-jumbotron">
+      <h1>Tombstones/Memorials SA</h1>
+      <h3>Suppliers & Installers</h3>
+      <h2>Best Price and Quality in South Africa</h2>
+    </div>
+    <div class='read-below-guide hidden-lg hidden-md'>
+      For more information read below form...
+    </div>
+    <div class="row">
+      <div class='col-md-6 col-xs-12 contactus-form'>
+        <form method='POST' action=''> {% csrf_token %}
+          {{form|crispy}}
+          <input type='submit' class='btn btn-contactus-submit btn-lg btn-block' value='Submit' />
+        </form>
+      </div>
+      <div class='col-md-6 col-xs-12'>
+        {% include 'welcome_para.html' %}
+        {% include 'explain_para.html' %}
+        {% include 'feedback_encouragement_para.html' %}
+        {% include 'catalogue_para.html' %}
+        {% include 'fill_form_encouragement_para.html' %}
+        <img src="../static/images/contactus/IMG_0361.jpg" alt="{{obj.desc}}" class="img-responsive">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
