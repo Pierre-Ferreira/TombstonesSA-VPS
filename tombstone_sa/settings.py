@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'tombstones_sa.wsgi.application'
+WSGI_APPLICATION = 'tombstone_sa.wsgi.application'
 
 
 # Database
@@ -142,9 +142,10 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media_cdn")
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
-# EMAIL_USE_TLS = True
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = "pdferreira777@gmail.com"
-# EMAIL_HOST_PASSWORD = "P7e7e7r7"
-# EMAIL_PORT = 587
-
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'admin@tombstones-memorials-sa.co.za'
+EMAIL_HOST_PASSWORD = 'Pierre777'
+DEFAULT_FROM_EMAIL = 'admin@tombstones-memorials-sa.co.za'
+# DEFAULT_TO_EMAIL = 'to email'
