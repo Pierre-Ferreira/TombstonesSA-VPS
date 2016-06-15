@@ -36,13 +36,13 @@ def contact_us_form_view(request):
         alertEmailMessage += "\ncatalogueCodes: %s" % custCatalogueCodes
         alertEmailMessage += "\ncolorTombstone: %s" % custColorTombstone
         alertEmailMessage += "\notherInfo: %s" % custOtherInfo
-        send_mail(alertEmailSubj, alertEmailMessage, settings.EMAIL_HOST_USER,['pierre@tektite.biz'], fail_silently=False)
+        # send_mail(alertEmailSubj, alertEmailMessage, settings.EMAIL_HOST_USER,['pierre@tektite.biz'], fail_silently=False)
         #send email to form submitter to confirm that info has been received.
         custEmailSubj = 'Tombstone/Memorial form submission received'
         custEmailMesssage = 'Thank you,\nyour info have been received. Someone will contact with you soon.'
         custEmailMesssage += "\n\nWarm regards,\n sales@tombstones-memorials-sa.co.za"
         custEmailMesssage += "\n www.tombstones-memorials-sa.co.za"
-        send_mail(custEmailSubj, custEmailMesssage, settings.EMAIL_HOST_USER,[custEmailAddr], fail_silently=False)
+        # send_mail(custEmailSubj, custEmailMesssage, settings.EMAIL_HOST_USER,[custEmailAddr], fail_silently=False)
         #message success
         messages.success(request, "Your request has been submitted!")
         return HttpResponseRedirect('/contactus')
