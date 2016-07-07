@@ -41,6 +41,9 @@ body{
 .catalogue-thumbnail p {
   height: 60px
 }
+.catalogue-thumbnail img {
+  height: 300px
+}
 .feedback-form {
   background-color: #d6d6d6;
   border-width: 2px;
